@@ -1,0 +1,205 @@
+:root{
+    --white-text: white;
+    --white-bg: white;
+    --padding-2: 2rem;
+    
+}
+*{
+    margin: 0;
+    font-family: arial;
+}
+/* creo delle classi universali per stili ripetuti come il bordo */
+
+.border{
+    border: 1px dashed black;
+}
+.dflex{
+    display: flex;
+}
+.button-small{
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px 1rem;
+
+}
+/* do alla nav una grandezza fissa per poterla centrare nell'header */
+
+
+/* stilizzo l'interno della nav */
+header div nav {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    margin: auto;
+    padding-top: 1rem;
+}
+header div nav img{
+    height: 1.8rem;
+    flex-grow: 1;
+}
+nav div ul li{
+    height: 100%;
+}
+nav div ul li a{
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: var(--white-text);
+}
+nav div ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+
+}
+
+.logo-container{
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.link-container{
+    flex-grow: 2;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.login-container{
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.title-container{
+    width: 920px;
+    margin: 0 auto;
+}
+header div h1{
+    width: 100%;
+    text-align: center;
+    color: var(--white-text);
+    padding: var(--padding-2) 0 var(--padding-2);
+}
+header div p{
+    text-align: center;
+    color: var(--white-text);
+    padding: 0 8rem 1rem;
+}
+header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+/* stili per il main */
+
+/* classi per colore in modo da non dover creare troppe classi per div simili nei 
+quali il colore è l'unica cosa che cambia e per rendere il codice semplice da modulare */
+.blue{
+    background-color: #00008b;
+}
+
+.gray{
+    background-color: lightgray;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.cornflower{
+    background-color: cornflowerblue;
+}
+.green{
+    background-color: green;
+}
+.salmon{
+    background-color: #f08080;
+}
+.watergreen{
+    background-color: #20b2aa;
+}
+.height-standard{
+    height: 300px;
+}
+.height350{
+    height: 350px;
+}
+.height400{
+    height: 400px;
+}
+.height550{
+    height: 550px;
+}
+.height600{
+    height: 600px;
+}
+/* creo diverse classi per ogni div */
+main .container{
+    justify-content: center;
+    align-items: center;
+}
+
+.container-solo{
+    width: 600px;
+    background-color: #ee82ee;
+}
+
+
+.contanier-universal{
+    /* avendo sezioni con container di stesse dimensioni creo una classe universale */
+    width: 800px;
+}
+
+.container-bigger{
+    flex-grow: 2;
+}
+
+.container-smaller{
+    flex-grow: 1;
+}
+
+/* inizio stili per il footer */
+.border-white{
+    border: 1px dashed white;
+}
+footer{
+    background-color: #23272a;
+    padding-top: 1rem;
+}
+
+footer .container{
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid lightgray;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+.nav-container{
+    background-color: aquamarine;
+    height: 80px;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer{
+    padding: 1px;
+}
+.button-footer{
+    display: flex;
+}
